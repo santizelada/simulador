@@ -1,13 +1,31 @@
 *{
     font-family: 'Noto Sans JP', sans-serif;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 
 .itemsContainer{
-    background-color: rgb(199, 97, 7);
+    /* background:  rgb(199, 97, 7) url(../img/New\ Project\ \(86\).webp) no-repeat center top, linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/New\ Project\ \(86\).webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 180%;
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    justify-content: center;
+}
+
+#formulario{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +33,42 @@
 }
 
 .itemsContainer h1{
-
     text-align: center;
+}
 
+#formulario label{
+    color: white;
+}
+
+#formulario input{
+    color: rgb(235, 235, 235);
+    background-color: #6868687f;
+    border-style: none;
+    height: 20%;
+    font-size: 150%;
+    text-align: center;
+}
+
+#formulario button{
+    /* font-size: 85%;
+    background-color: #035d42;
+    color: rgb(200, 200, 200);
+    padding: 2%;
+    border-radius: 30%;
+    width: 10%;
+    height: 25%; */
+    margin-top: 10%;
+    border-radius: 20%;
+    font-size: 100%;
+    border-style: none;
+    padding: 4% 5% 4% 5%;
+    color: #ffffff;
+    background-color: #001b88;
+
+
+}
+
+#resultado{
+    color: white;
+    text-align: center;
 }
